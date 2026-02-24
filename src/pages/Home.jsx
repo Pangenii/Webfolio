@@ -3,15 +3,15 @@ import Socials from "../components/Socials";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col justify-center h-full px-12 py-10 select-none border-2 border-amber-30 mt-16 mb-8">
+      <div className="flex flex-col justify-center h-full px-12 py-10 select-none text-left border-2 border-amber-30 mt-16 mb-8">
         <p
-          className="text-2xl font-bold text-left border-2 border-amber-300 mb-8 tracking-wide"
+          className="text-2xl font-bold border-2 border-amber-300 mb-8 tracking-wide"
           style={{ color: "#777" }}
         >
           Hi, I am
         </p>
         <h1
-          className="text-6xl font-black text-left mb-2 leading-tight tracking-widest uppercase"
+          className="text-6xl font-black  mb-2 leading-tight tracking-widest uppercase"
           style={{
             color: "#222",
             fontFamily: "'poppins'",
@@ -21,7 +21,7 @@ const Home = () => {
           Bishwa Pangeni
         </h1>
         <p
-          className="text-sm text-left font-semibold mb-16 tracking-widest uppercase"
+          className="text-sm  font-semibold mb-16 tracking-widest uppercase"
           style={{ color: "#777" }}
         >
           Full-stack Developer / Algorithm Enthusiast
