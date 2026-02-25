@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import ContactCard from "../components/ContactCard";
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <>
+      <ContactCard />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;
