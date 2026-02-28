@@ -24,10 +24,12 @@ const InfoRow = ({ icon, label, value }) => (
       {icon}
     </div>
     <div>
-      <p className="text-xs font-semibold tracking-widest uppercase text-gray-400 m-0">
+      <p className="text-xs font-semibold tracking-widest uppercase text-gray-500 m-0">
         {label}
       </p>
-      <p className="text-sm font-semibold text-gray-700 mt-1">{value}</p>
+      <p className="text-sm font-semibold text-gray-700 mt-1 tracking-wide">
+        {value}
+      </p>
     </div>
   </div>
 );

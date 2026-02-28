@@ -13,7 +13,7 @@ const Skills = () => {
             SOFT SKILLS
           </p>
         </div>
-        <div class="techskills flex flex-col">
+        <div className="techskills flex flex-col">
           <p
             className="text-2xl font-bold mb-16 tracking-widest uppercase"
             style={{ color: "#000" }}

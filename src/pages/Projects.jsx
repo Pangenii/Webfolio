@@ -3,60 +3,52 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
-    title: "URL-Shortener",
+    title: "Trivia AI",
     description:
-      "A full-stack MERN application that allows users to generate shortened URLs and track detailed analytics, including visitor count and usage patterns through graph-based visualizations.",
+      "An interactive web app that visualizes sorting and pathfinding algorithms in real time, helping users understand how algorithms work step by step. And all the text written here is for testing so that it elongates to an extent where it looks so elegant.",
     language: "JavaScript",
-    languageColor: "#f1e05a",
-    isPublic: true,
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio built with React and Vite featuring a neomorphic design system, diagonal SVG layout, and smooth route-based content switching.",
-    language: "TypeScript",
-    languageColor: "#3178c6",
-    isPublic: true,
-  },
-  {
-    title: "Algorithm Visualizer",
-    description:
-      "An interactive web app that visualizes sorting and pathfinding algorithms in real time, helping users understand how algorithms work step by step.",
-    language: "Python",
     languageColor: "#3572A5",
-    isPublic: false,
-  },
-  {
-    title: "Algorithm Visualizer",
-    description:
-      "An interactive web app that visualizes sorting and pathfinding algorithms in real time, helping users understand how algorithms work step by step.",
-    language: "Python",
-    languageColor: "#3572A5",
-    isPublic: false,
   },
 ];
 
 const Projects = () => {
   return (
-    <>
-      <div className="px-12 py-10 mr-6">
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gap: "20px",
-          }}
-        >
-          {projects.map((project, i) => (
-            <ProjectCard key={i} {...project} />
-          ))}
-        </div>
+    <div className="flex flex-col h-full p-4 gap-4 ">
+      <div className="grid w-full">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            language={project.language}
+            languageColor={project.languageColor}
+          />
+        ))}
       </div>
-      <div class="text-center uppercase font-bold text-black tracking-wide">
-        {" "}
-        More On GITHUB{" "}
+
+      <div
+        id="github-link"
+        className="text-center uppercase font-bold text-[#2c2c2c] tracking-widest text-xs py-2 px-6 rounded-full w-fit mx-auto cursor-pointer transition-all duration-200 select-none"
+        style={{
+          background: "#d7d7d7",
+          boxShadow: "4px 4px 10px #b8b8b8, -4px -4px 10px #f6f6f6",
+        }}
+        onMouseDown={(e) =>
+          (e.currentTarget.style.boxShadow =
+            "inset 3px 3px 7px #b8b8b8, inset -3px -3px 7px #f6f6f6")
+        }
+        onMouseUp={(e) =>
+          (e.currentTarget.style.boxShadow =
+            "4px 4px 10px #b8b8b8, -4px -4px 10px #f6f6f6")
+        }
+        onMouseLeave={(e) =>
+          (e.currentTarget.style.boxShadow =
+            "4px 4px 10px #b8b8b8, -4px -4px 10px #f6f6f6")
+        }
+      >
+        More on GitHub
       </div>
-    </>
+    </div>
   );
 };
 

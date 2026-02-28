@@ -11,9 +11,6 @@ const NavBar = () => {
           Skills
         </a>
         <a href="/timeline" className="text-white">
-          Timeline
-        </a>
-        <a href="/timeline" className="text-white">
           Projects
         </a>
         <a href="/timeline" className="text-white">
