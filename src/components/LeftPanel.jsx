@@ -7,8 +7,8 @@ const LeftPanel = () => {
   return (
     <div className="left-panel">
       {/*<Home/>*/}
-      {/*<Skills />*/}
-      <Projects />
+      <Skills />
+      {/* <Projects /> */}
       {/* <Contact /> */}
     </div>
   );
