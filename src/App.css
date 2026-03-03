@@ -17,3 +17,6 @@ body {
   }
 }
 
+.slick-list {
+  min-height: 450px;
+}

@@ -11,7 +11,7 @@ const ProjectCard = ({
 
   return (
     <div
-      className="w-[50%] rounded-2xl p-4 flex flex-col gap-3 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 ml-[25%] my-[5%]"
+      className=" w-full max-w-75 mx-auto rounded-2xl p-4 flex flex-col gap-3 cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
       style={{
         background: "#d7d7d7",
         boxShadow: "6px 6px 14px #b8b8b8, -6px -6px 14px #f6f6f6",
@@ -24,7 +24,7 @@ const ProjectCard = ({
         <div
           onMouseEnter={() => setImageFrameHovered(true)}
           onMouseLeave={() => setImageFrameHovered(false)}
-          className="rounded-xl overflow-hidden w-full transition-all duration-200 flex items-center justify-center"
+          className="rounded-xl  w-full transition-all duration-200 flex items-center justify-center"
           style={{
             aspectRatio: "16 / 9",
             background: "#d7d7d7",
@@ -51,11 +51,14 @@ const ProjectCard = ({
           )}
         </div>
       </div>
-      <div className=" flex flex-col gap-1.5 text-left" id="title-description">
+      <div
+        className=" flex flex-col gap-1.5 text-left mb-4"
+        id="title-description"
+      >
         <h3 className="text-[15px] font-bold text-[#2c2c2c] tracking-tight m-0 leading-snug">
           {title}
         </h3>
-        <p className="text-[12px] text-[#5a5a5a] leading-relaxed m-0 line-clamp-7">
+        <p className="text-[12px] text-[#5a5a5a] leading-relaxed m-0 line-clamp-6">
           {description}
         </p>
       </div>
