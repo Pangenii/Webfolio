@@ -14,3 +14,5 @@
 # SCREENSHOT OF DAY 4, Made SkillsCard, Unfinished Carousel Effect on Project component:
 <img width="1920" height="872" alt="image" src="https://github.com/user-attachments/assets/b4c51d8d-9f26-4afc-8688-bb185b039df2" />
 
+# SCREENSHOT OF DAY 4, Made Slider on Project component using React-slick library:
+<img width="1920" height="880" alt="image" src="https://github.com/user-attachments/assets/fd8fd140-5e2c-4cc3-965c-94d5dd927ecf" />
