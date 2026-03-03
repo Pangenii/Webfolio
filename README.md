@@ -8,5 +8,6 @@
 # SCREENSHOT OF DAY 2, BUT Made Contact Card, Unfinished Skills page and ProjectCard component:
 <img width="1920" height="879" alt="image" src="https://github.com/user-attachments/assets/7e497744-b660-49f3-8c61-1084447148b8" />
 
-
+# SCREENSHOT OF DAY 3, BUT Made ProjectCard, Unfinished Skills page and component:
+<img width="1920" height="884" alt="image" src="https://github.com/user-attachments/assets/46e7b267-fe1d-4946-a455-3c8626b4d21e" />
 
