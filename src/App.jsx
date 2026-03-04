@@ -10,10 +10,10 @@ function App() {
       <div className="flex justify-center w-full">
         <div className="border-2 border-solid border-slate-500/30 min-h-[84vh] w-full mt-8 mx-8">
           <div className="flex h-full">
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2 ">
               <LeftPanel />
             </div>
-            <div className="w-1/2 border-2 border-amber-900 overflow-visible">
+            <div className="hidden sm:block sm:w-1/2 border-2 border-amber-900 overflow-visible">
               <RightPanel />
             </div>
           </div>

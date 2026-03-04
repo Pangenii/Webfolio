@@ -26,6 +26,13 @@ const projects = [
     language: "JavaScript",
     languageColor: "#3572A5",
   },
+  {
+    title: "Trivia AI",
+    description:
+      "An interactive web app that visualizes sorting and pathfinding algorithms in real time, helping users understand how algorithms work step by step. And all the text written here is for testing so that it elongates to an extent where it looks so elegant.",
+    language: "JavaScript",
+    languageColor: "#3572A5",
+  },
 ];
 
 const Projects = () => {
