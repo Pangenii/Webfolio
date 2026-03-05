@@ -37,12 +37,14 @@ const SkillsCard = () => {
 
       <div>
         <h2 className="text-2xl font-bold tracking-widest uppercase mb-6">
-          DevOps & Architecture
+          DevOps & Tools
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <SkillButton name="Docker" />
-          <SkillButton name="Microservices" />
+          <SkillButton name="Git" />
+          <SkillButton name="Github" />
+          <SkillButton name="Bitbucket" />
         </div>
       </div>
     </div>
