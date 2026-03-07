@@ -24,7 +24,7 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   body {
     background: #D7D7D7;
   }

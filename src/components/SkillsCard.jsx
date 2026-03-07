@@ -1,6 +1,6 @@
 const SkillButton = ({ name }) => {
   return (
-    <div className="px-4 py-2 border-3 rounded-xl text-sm font-medium hover:bg-black hover:text-white transition-all duration-300 cursor-pointer">
+    <div className="px-5 sm:px-4 py-2 border-3 rounded-xl text-xs font-medium hover:bg-black hover:text-white transition-all duration-300 cursor-pointer md:text-sm">
       {name}
     </div>
   );
@@ -8,9 +8,9 @@ const SkillButton = ({ name }) => {
 
 const SkillsCard = () => {
   return (
-    <div className="border-2 border-dashed text-black border-black rounded-2xl p-6 mr-[10%] my-[8%]">
+    <div className="items-center border-2 border-dashed text-black border-black rounded-2xl p-6 mx-auto sm:mr-[10%] sm:ml-0 my-[8%] lg:min-h-[50vh]">
       <div className="mb-6">
-        <h2 className="text-2xl font-bold tracking-widest uppercase mb-2 ">
+        <h2 className="text-sm sm:text-2xl font-bold tracking-widest uppercase mb-6 ">
           Languages
         </h2>
 
@@ -21,7 +21,7 @@ const SkillsCard = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-bold tracking-widest uppercase mb-6">
+        <h2 className="text-sm sm:text-2xl font-bold tracking-widest uppercase mb-6">
           Web Technologies
         </h2>
 
@@ -36,7 +36,7 @@ const SkillsCard = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold tracking-widest uppercase mb-6">
+        <h2 className="text-sm sm:text-2xl font-bold tracking-widest uppercase mb-6">
           DevOps & Tools
         </h2>
 

@@ -20,3 +20,9 @@ body {
 .slick-list {
   min-height: 450px;
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important; 
+  font-size: 32px !important ;
+}

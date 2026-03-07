@@ -18,8 +18,12 @@ const InfoRow = ({ icon, label, value }) => (
   <div className="flex items-center gap-4">
     <div
       style={neoStyle}
-      onMouseEnter={(e) => Object.assign(e.currentTarget.style, neoHover)}
-      onMouseLeave={(e) => Object.assign(e.currentTarget.style, neoStyle)}
+      onMouseEnter={(e) =>
+        Object.assign(e.currentTarget.style, { ...neoHover })
+      }
+      onMouseLeave={(e) =>
+        Object.assign(e.currentTarget.style, { ...neoStyle })
+      }
     >
       {icon}
     </div>
@@ -43,7 +47,7 @@ const NeoActionButton = ({ children, onClick }) => {
       onMouseLeave={() => setHovered(false)}
       style={{
         flex: 1,
-        minWidth: "120px",
+        maxWidth: "120px",
         padding: "13px 20px",
         borderRadius: "14px",
         border: "2px solid #222",
@@ -78,25 +82,28 @@ const ContactCard = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        padding: "12px",
       }}
     >
       <div
         style={{
           background: "#d7d7d7",
           borderRadius: "28px",
-          padding: "40px 44px",
+          padding: "clamp(24px, 5vw, 40px) clamp(20px, 6vw, 44px)",
           boxShadow: "12px 12px 24px #b8b8b8, -12px -12px 24px #f6f6f6",
           display: "flex",
           flexDirection: "column",
           gap: "28px",
-          minWidth: "320px",
+          width: "100%",
+          maxWidth: "320px",
+          boxSizing: "border-box",
         }}
       >
         <div>
           <p className="m-0 text-xs font-bold tracking-[0.18em] uppercase text-gray-400">
             Get in touch
           </p>
-          <h2 className="mt-1 text-2xl font-extrabold text-gray-800 tracking-[0.1rem]">
+          <h2 className="mt-1 text-2xl font-extrabold text-gray-800 tracking-[0.1rem] uppercase">
             Contact Me
           </h2>
         </div>
@@ -116,7 +123,7 @@ const ContactCard = () => {
 
         <Divider />
 
-        <div class="flex gap-4 flex-wrap">
+        <div className="flex gap-4 flex-wrap">
           <NeoActionButton>Hire Me</NeoActionButton>
           <NeoActionButton>
             <IoMdDownload /> CV
