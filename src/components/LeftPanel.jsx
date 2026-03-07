@@ -8,8 +8,8 @@ const LeftPanel = () => {
   return (
     <div className="left-panel">
       {/* <About /> */}
-      <Skills />
-      {/* <Projects /> */}
+      {/* <Skills /> */}
+      <Projects />
       {/* <Contact /> */}
     </div>
   );

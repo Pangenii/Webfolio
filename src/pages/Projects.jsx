@@ -46,11 +46,11 @@ const Projects = () => {
   };
 
   return (
-    <div className="flex flex-col h-full gap-6 items-center">
-      <div className="w-full max-w-125 py-6">
+    <div className="flex flex-col h-[80vh] gap-6 items-center">
+      <div className="w-full max-w-125 py-6 overflow-hidden md:overflow-visible">
         <Slider {...settings}>
           {projects.map((project, index) => (
-            <div key={index} className="flex justify-center mt-6">
+            <div key={index} className="px-4 mt-6">
               <ProjectCard
                 title={project.title}
                 description={project.description}
