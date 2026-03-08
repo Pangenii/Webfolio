@@ -55,7 +55,7 @@ const ProjectCard = ({
         className=" flex flex-col gap-1.5 text-left mb-4"
         id="title-description"
       >
-        <h3 className="text-[15px] font-bold text-[#2c2c2c] tracking-tight m-0 leading-snug">
+        <h3 className="text-[15px] font-bold text-[#2c2c2c] tracking-wide m-0 leading-snug">
           {title}
         </h3>
         <p className="text-[12px] text-[#5a5a5a] leading-relaxed m-0 line-clamp-6">

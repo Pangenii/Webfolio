@@ -8,9 +8,9 @@ const SkillButton = ({ name }) => {
 
 const SkillsCard = () => {
   return (
-    <div className="items-center border-2 border-dashed text-black border-black rounded-2xl p-6 mx-auto sm:mr-[10%] sm:ml-0 my-[8%] lg:min-h-[50vh]">
+    <div className="items-center border-2 border-dashed text-black border-black rounded-2xl p-6 mx-auto sm:mr-[10%] sm:ml-0 my-[8%] ">
       <div className="mb-6">
-        <h2 className="text-sm sm:text-2xl font-bold tracking-widest uppercase mb-6 ">
+        <h2 className="text-sm sm:text-2xl font-bold tracking-widest uppercase mb-3">
           Languages
         </h2>
 

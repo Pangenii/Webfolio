@@ -8,16 +8,20 @@ const Socials = () => {
     <>
       <div className="flex gap-6">
         <a
-          href="mailto:you@email.com"
+          href="mailto:bishwapangeni90@gmail.com"
+          title="MAIL : bishwapangeni90@gmail.com"
           style={neoStyle}
-          className="neo-btn"
-          onMouseEnter={(e) => Object.assign(e.currentTarget.style, neoHover)}
-          onMouseLeave={(e) => Object.assign(e.currentTarget.style, neoStyle)}
+          onMouseEnter={(e) =>
+            Object.assign(e.currentTarget.style, { ...neoHover })
+          }
+          onMouseLeave={(e) =>
+            Object.assign(e.currentTarget.style, { ...neoStyle })
+          }
         >
           <IoIosMail />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/Pangenii"
           target="_blank"
           rel="noreferrer"
           style={neoStyle}
@@ -27,7 +31,7 @@ const Socials = () => {
           <FaGithub />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/bishwa-pangeni-84436a187/"
           target="_blank"
           rel="noreferrer"
           style={neoStyle}

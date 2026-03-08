@@ -6,31 +6,32 @@ import "slick-carousel/slick/slick-theme.css";
 
 const projects = [
   {
-    title: "Trivia AI",
+    title: "URL-Shortener",
     description:
-      "An interactive web app that visualizes sorting and pathfinding algorithms in real time, helping users understand how algorithms work step by step. And all the text written here is for testing so that it elongates to an extent where it looks so elegant.",
+      "A full-stack MERN application that allows users to generate shortened URLs and track analytics such as visitor count and usage patterns through graph-based visualizations.",
     language: "JavaScript",
-    languageColor: "#3572A5",
+    languageColor: "#f1e05a",
   },
   {
-    title: "Trivia AI",
+    title: "Criply",
     description:
-      "helping users understand how algorithms work step by step. And all the text written here is for testing so that it elongates to an extent where it looks so elegant.",
+      "Backend service for an application that helps users find the best grocery items at affordable prices available in the market.",
     language: "JavaScript",
-    languageColor: "#3572A5",
+    languageColor: "#f1e05a",
   },
   {
-    title: "Trivia AI",
+    title: "NEPSE-LIVEDATA",
     description:
-      "An interactive web app that visualizes sorting and pathfinding algorithms in real time, helping users understand how algorithms work step by step. And all the text written here is for testing so that it elongates to an extent where it looks so elegant.",
+      "A full-stack stock data scraper for the Nepal Stock Exchange built with Node.js, Cheerio, and React.js. The application extracts and displays live market data from NEPSE.",
     language: "JavaScript",
-    languageColor: "#3572A5",
+    languageColor: "#f1e05a",
   },
+
   {
-    title: "Trivia AI",
+    title: "FEN-Generator",
     description:
-      "An interactive web app that visualizes sorting and pathfinding algorithms in real time, helping users understand how algorithms work step by step. And all the text written here is for testing so that it elongates to an extent where it looks so elegant.",
-    language: "JavaScript",
+      "A screenshot-to-FEN tool that automatically detects chess piece placement from a board image and converts it into a machine-readable FEN string, eliminating the need for manual board setup in the Lichess editor.",
+    language: "Python",
     languageColor: "#3572A5",
   },
 ];
@@ -82,7 +83,9 @@ const Projects = () => {
             "4px 4px 10px #b8b8b8, -4px -4px 10px #f6f6f6")
         }
       >
-        More on GitHub
+        <a href="https://github.com/Pangenii" target="_blank">
+          More on GitHub
+        </a>
       </div>
     </div>
   );
