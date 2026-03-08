@@ -1,6 +1,6 @@
 import "./App.css";
 import LeftPanel from "./components/LeftPanel";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar";
 import RightPanel from "./components/RightPanel";
 
 function App() {
