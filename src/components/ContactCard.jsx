@@ -76,15 +76,7 @@ const NeoActionButton = ({ children, onClick }) => {
 
 const ContactCard = () => {
   return (
-    <div
-      style={{
-        minHeight: "80vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "12px",
-      }}
-    >
+    <div className="min-h-[70vh] mt-[-2%] md:min-h-[80vh] flex items-center justify-center p-3">
       <div
         style={{
           background: "#d7d7d7",
