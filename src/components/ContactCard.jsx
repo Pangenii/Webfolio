@@ -116,8 +116,18 @@ const ContactCard = () => {
         <Divider />
 
         <div className="flex gap-4 flex-wrap">
-          <NeoActionButton>Hire Me</NeoActionButton>
-          <NeoActionButton>
+          <NeoActionButton
+            onClick={() => {
+              window.location.href = "tel:+9779708240632";
+            }}
+          >
+            Hire Me
+          </NeoActionButton>
+          <NeoActionButton
+            onClick={() => {
+              window.open("/assets/BishwaPangeni_CV.pdf", "_blank");
+            }}
+          >
             <IoMdDownload /> CV
           </NeoActionButton>
         </div>
