@@ -3,28 +3,20 @@ import ProjectCard from "../components/ProjectCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import chess from "../assets/images/chess.png";
+import stockTracker from "../assets/images/stocktracker.png";
+import criply from "../assets/images/criply.png";
+import colorPicker from "../assets/images/colorPicker.png";
 
 const projects = [
   {
-    title: "URL-Shortener",
-    description:
-      "A full-stack MERN application that allows users to generate shortened URLs and track analytics such as visitor count and usage patterns through graph-based visualizations.",
-    language: "JavaScript",
-    languageColor: "#f1e05a",
-  },
-  {
-    title: "Criply",
-    description:
-      "Backend service for an application that helps users find the best grocery items at affordable prices available in the market.",
-    language: "JavaScript",
-    languageColor: "#f1e05a",
-  },
-  {
-    title: "NEPSE-LIVEDATA",
+    title: "StockTracker",
     description:
       "A full-stack stock data scraper for the Nepal Stock Exchange built with Node.js, Cheerio, and React.js. The application extracts and displays live market data from NEPSE.",
     language: "JavaScript",
     languageColor: "#f1e05a",
+    image: stockTracker,
+    link: "https://stock-tracker-nepal.vercel.app/",
   },
 
   {
@@ -33,6 +25,30 @@ const projects = [
       "A screenshot-to-FEN tool that automatically detects chess piece placement from a board image and converts it into a machine-readable FEN string, eliminating the need for manual board setup in the Lichess editor.",
     language: "Python",
     languageColor: "#3572A5",
+    image: chess,
+  },
+  {
+    title: "URL-Shortener",
+    description:
+      "A full-stack MERN application that allows users to generate shortened URLs and track analytics such as visitor count and usage patterns through graph-based visualizations.",
+    language: "JavaScript",
+    languageColor: "#f1e05a",
+  },
+  {
+    title: "color-picker CHROME EXTENSION",
+    description:
+      "Backend service for an application that helps users find the best grocery items at affordable prices available in the market.",
+    language: "JavaScript",
+    languageColor: "#f1e05a",
+    image: colorPicker,
+  },
+  {
+    title: "Criply",
+    description:
+      "Backend service for an application that helps users find the best grocery items at affordable prices available in the market.",
+    language: "JavaScript",
+    languageColor: "#f1e05a",
+    image: criply,
   },
 ];
 
@@ -57,6 +73,8 @@ const Projects = () => {
                 description={project.description}
                 language={project.language}
                 languageColor={project.languageColor}
+                image={project.image}
+                link={project.link}
               />
             </div>
           ))}
