@@ -7,6 +7,7 @@ import chess from "../assets/images/chess.png";
 import stockTracker from "../assets/images/stocktracker.png";
 import criply from "../assets/images/criply.png";
 import colorPicker from "../assets/images/colorPicker.png";
+import shortify from "../assets/images/shortify.png";
 
 const projects = [
   {
@@ -28,11 +29,13 @@ const projects = [
     image: chess,
   },
   {
-    title: "URL-Shortener",
+    title: "Shortifyyy",
     description:
       "A full-stack MERN application that allows users to generate shortened URLs and track analytics such as visitor count and usage patterns through graph-based visualizations.",
     language: "JavaScript",
     languageColor: "#f1e05a",
+    link: "https://shortifyyy.vercel.app/",
+    image: shortify,
   },
   {
     title: "color-picker CHROME EXTENSION",
@@ -41,6 +44,7 @@ const projects = [
     language: "JavaScript",
     languageColor: "#f1e05a",
     image: colorPicker,
+    link: "https://github.com/Pangenii/Picker--ChromeExtension-",
   },
   {
     title: "Criply",
@@ -49,6 +53,7 @@ const projects = [
     language: "JavaScript",
     languageColor: "#f1e05a",
     image: criply,
+    link: "https://github.com/Pangenii/Criply",
   },
 ];
 
